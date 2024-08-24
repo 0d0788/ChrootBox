@@ -14,7 +14,7 @@ How it works:
 - mount (bind) everything important into $CHROOT_PATH (/proc, /run, /dev, /sys)
 - mount (bind) /tmp into $CHROOT_PATH (shared /tmp for file exchange)
 - install important packages in the chroot env. (editors, tmux)
-- create user and lock root (further root access with sudo or sudo -i)
+- in the chroot env. create a user and lock root (further root access with sudo or sudo -i)
 - export $DISPLAY env var and copy .Xauthority file from host X-server into $CHROOT_PATH/home/user to make GUIs work
 - execute chroot with $CHROOT_PATH as new root and launch tmux as user ( ```chroot $CHROOT_PATH /bin/bash -c "su - user -c 'exec tmux'"``` )
 
