@@ -1,7 +1,7 @@
 ChrootBox
 =
 
-ChrootBox is a small wrapper script around chroot to create and enter an interactive sandbox environment.
+ChrootBox is a small wrapper script around chroot to create and enter an interactive sandbox like environment.
 Useful e.g. for testing applications with many dependencies so that you can just remove the $CHROOT_PATH dir like a container image
 and don't have to worry about keeping your main os clean from junk.
 
