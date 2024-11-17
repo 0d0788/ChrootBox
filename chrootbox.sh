@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Copyright (C) 2024 www.github.com/0d0788. All rights reserved.
-# This script is licensed under the GPLv3+. Please see LICENSE for more information.
+# This script is licensed under the BSD 2-Clause license. Please see LICENSE for more information.
 
 ### chroot wrapper to make interactive sandbox env on file level.
 ### use this script everytime you want to enter the sandbox
