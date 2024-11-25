@@ -8,7 +8,7 @@
 
 ## script settings
 CHROOT_PATH="/chroot_env" # absolute path to the folder used by chroot as root dir
-X_USER="theo" # user on the host that runs the X server (needed to copy the .Xauthority file to chroot env for GUIs)
+X_USER=$(whoami) # user on the host that runs the X server (needed to copy the .Xauthority file to chroot env for GUIs)
 
 if [ $UID != 0 ]; then
 	echo "needs to run with root priveleges: quitting"
